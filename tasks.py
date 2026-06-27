@@ -67,7 +67,7 @@ def fill_and_submit_sales_form(sales_rep):
 def collect_results():
     """Takes a screenshot of the completed sales results page"""
     page = browser.page()
-    page.screenshot(path="output/sales_summary.png")
+    page.screenshot(path="output/sales_summary.png", animations="disabled", timeout=60000)
 
 
 def export_as_pdf():
